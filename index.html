@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI WEB</title>
+
+    <style>
+        /* DISEÑO GENERAL */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f0f3f8;
+            color: #333;
+            margin: 0;
+            padding: 30px;
+            line-height: 1.7;
+        }
+
+        body {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* ENCABEZADOS */
+        h1, h2, h3, h4, h5, h6 {
+            color: #263b65;
+            margin-top: 30px;
+        }
+
+        h1 {
+            background: linear-gradient(135deg, #263b65, #5479b8);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 34px;
+        }
+
+        h2 {
+            background: #dce7f7;
+            padding: 12px 18px;
+            border-left: 6px solid #5479b8;
+            border-radius: 6px;
+        }
+
+        h3, h4, h5, h6 {
+            color: #5479b8;
+        }
+
+        /* PÁRRAFOS */
+        p {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        mark {
+            background: #ffe58a;
+            padding: 3px 5px;
+            border-radius: 4px;
+        }
+
+        blockquote {
+            background: #e2ebf8;
+            border-left: 5px solid #5479b8;
+            padding: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: #cbd5e1;
+            margin: 30px 0;
+        }
+
+        /* IMAGEN */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* ENLACES */
+        a {
+            color: #3568b8;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #183b75;
+            text-decoration: underline;
+        }
+
+        /* FORMULARIOS */
+        form {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+        }
+
+        form div {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: bold;
+            color: #263b65;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        input[type="mail"],
+        input[type="number"],
+        input[type="date"],
+        textarea,
+        select {
+            padding: 11px;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+            font-size: 15px;
+            margin-top: 5px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #5479b8;
+            box-shadow: 0 0 5px rgba(84,121,184,0.3);
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #5479b8;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background: #365f9e;
+            color: white;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #263b65;
+            transform: translateY(-2px);
+        }
+
+        /* LISTAS */
+        ol, ul {
+            background: white;
+            padding: 25px 45px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        li::marker {
+            color: #5479b8;
+            font-weight: bold;
+        }
+
+        /* TABLAS */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+        }
+
+        th {
+            background: #365f9e;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        td {
+            padding: 13px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #edf2fa;
+        }
+
+        tbody tr:hover {
+            background: #dce7f7;
+        }
+
+        /* ADAPTACIÓN A MÓVILES */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            form {
+                padding: 15px;
+            }
+
+            input[type="text"],
+            input[type="mail"],
+            input[type="number"],
+            input[type="date"],
+            select {
+                width: 100%;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Estos son encabezados -->
+    <h1> Esta es mi primera web </h1>
+    <h2> Esta es mi primera web </h2>
+    <h3> Esta es mi primera web </h3>
+    <h4> Esta es mi primera web </h4>
+    <h5> Esta es mi primera web </h5>
+    <h6> Esta es mi primera web </h6>
+
+
+    <!-- Estos es formato -->
+    <p> Esto es un <b>párrafo</b> </p>
+
+    <p> <i>Lorem ipsum dolor sit amet, <mark>consectetur adipiscing elit</mark>. Proin in consequat nunc. Donec suscipit velit ante, at aliquam nisi sodales ut. Etiam sit amet massa consectetur, commodo dui et, maximus erat. Donec dui enim, vestibulum sed dictum sit amet, iaculis sed lectus. Integer vehicula metus at massa tincidunt, non mollis leo vulputate. Suspendisse quis nisl eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus feugiat sagittis libero, vel dictum nunc consectetur a. In tempus, ante eu feugiat feugiat, libero nulla fermentum nulla, vitae sagittis sapien augue quis ex. Nunc pulvinar, mi vitae volutpat faucibus, velit leo dictum dui, sit amet pellentesque magna lacus a libero. Etiam non orci imperdiet, congue ante et, porta massa. Curabitur dolor dui, feugiat id faucibus eu, efficitur ut lorem. Curabitur luctus bibendum nisl, sed lacinia erat. Phasellus iaculis dolor sed arcu rutrum maximus. </i></p>
+
+    <p> Estamos aprendiendo <abbr title="Esto es HTML"> HTML </abbr> </p>
+
+    <hr>
+
+    <blockquote> "Carpe diem, quam minimum credula postero" </blockquote>
+
+    <hr>
+    <br>
+    <br>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Proin in consequat nunc.</p>
+
+    <hr>
+
+    <!-- Estos son atributos -->
+    <p title="Esto es un párrafo"> Párrafo con atributo </p>
+
+    <!-- Esto es una imagen -->
+    <a href="https://www.netflix.com/es" target="_blank">
+        <img src="500_333.jpeg" alt="Oso polar" width="800">
+    </a>
+
+    <hr>
+
+    <!-- Esto es un enlace -->
+    <a href="https://www.netflix.com/es" target="_blank"> Ir a Netflix </a>
+
+    <br>
+
+    <a href="500_333.jpeg"> Clic aquí para ver el oso saludando </a>
+
+    <br>
+    <hr>
+
+
+    <!-- Formularios -->
+    <h2> FORMULARIOS </h2>
+
+    <form action="">
+
+        <div>
+            <label> Nombre </label>
+            <input type="text" label="Nombre" placeholder="Introduce tu nombre">
+        </div>
+
+        <br>
+
+        <div>
+            <label> Apellido </label>
+            <input type="text" label="Apellido">
+        </div>
+
+        <br>
+
+        <div>
+            <label> Correo </label>
+            <input type="mail" label="Correo">
+        </div>
+
+        <br>
+
+        <div>
+            <label> Campo de texto </label>
+            <br>
+            <textarea name="mensaje"> Mensaje </textarea>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+            <label> Genero </label>
+
+            <select name="Genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+        </div>
+
+        <br>
+
+        <input type="radio" name="Genero">Masculino <br>
+        <input type="radio" name="Genero">Femenino
+
+        <br>
+        <br>
+
+        <div>
+            <label> Edad </label>
+            <input type="number" label="Edad">
+        </div>
+
+        <br>
+
+        <div>
+            <label> Cumpleaños </label>
+            <input type="date" label="Cumpleaños">
+        </div>
+
+        <br>
+
+        <div>
+            <label> Bici </label>
+            <input type="checkbox" label="Vehículo">
+        </div>
+
+        <div>
+            <label> Coche </label>
+            <input type="checkbox" label="Vehículo">
+        </div>
+
+        <br>
+
+        <input type="submit" value="Enviar formulario">
+
+    </form>
+
+
+    <br>
+    <br>
+
+
+    <!-- Listas -->
+    <br>
+    <br>
+
+    <h2> Listas </h2>
+
+    <ol>
+        <li> Coche </li>
+        <li> Moto </li>
+        <li> Avión </li>
+        <li> Barco </li>
+    </ol>
+
+    <ul>
+        <li> Azul
+            <ul>
+                <li> Cian </li>
+                <li> Azul marino </li>
+                <li> Aguamarina </li>
+            </ul>
+        </li>
+        <li> Rojo </li>
+        <li> Verde </li>
+        <li> Amarillo </li>
+    </ul>
+
+
+    <br>
+    <br>
+
+
+    <!-- Tablas -->
+    <br>
+    <br>
+
+    <h2> Tabla </h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th> Nombre </th>
+                <th> Teléfono </th>
+                <th> Edad </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> Tom Cruise </td>
+                <td> 666666666 </td>
+                <td> 100 </td>
+            </tr>
+
+            <tr>
+                <td> Carmen Sevilla </td>
+                <td> 777777777 </td>
+                <td> 500 </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <br>
+    <br>
+
+</body>
+</html>
